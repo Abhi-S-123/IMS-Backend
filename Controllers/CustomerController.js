@@ -3,7 +3,8 @@ const Customers = require("../models/Custmer");
 module.exports.findCustomer = async function (req, res) {
   const data = await Customers.findCustomer();
   res.json(data);
-};
+
+}
 
 module.exports.AddCustomer = async function (req, res) {
   const data = await Customers.AddCustomer(req);
@@ -28,7 +29,4 @@ module.exports.listCustomer = async function (req, res) {
 
 
 
-// module.exports.get = async function((req, res) {
-//     const data = await Customers.findAll(req);
-//     res.json({ success: true, data: data });
-//   });
+
